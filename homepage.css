@@ -1,0 +1,128 @@
+.container {
+    display:grid;
+
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "sd sd main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+
+}
+
+.footer {
+  grid-area: ft;  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--navy);
+  color: var(--white);
+  text-align: center;
+}
+
+.leftside {
+  height: 90%;
+  grid-area: sd;
+  background-color: var(--brown);
+  color: var(--white);
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.leftside a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--white);
+  display: block;
+}
+
+.leftside input[type=text] {
+  padding: 6px;
+  margin: 8px 8px 6px 16px;
+  font-size: 17px;
+  border: none;
+}
+
+.archive {
+  padding: 6px 8px 6px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--white);
+  display: block;
+}
+
+.rightside {
+  display: flex;
+  flex-direction: row;
+  grid-area: main;
+  margin: 10px;
+}
+
+.header {
+  grid-area: hd;
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: var(--brown);
+  color: var(--white);
+}
+
+.card {
+  flex-grow: 1;
+  background-color: var(--white);
+  color: var(--navy);
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.card .image {
+  max-width: 100%;
+  height: 250px;
+}
+
+.leftside .search-container button {
+
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: var(--white);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  color: var(--navy);
+}
+
+.leftside .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .leftside .search-container {
+    float: none;
+  }
+  .leftside a, .leftside input[type=text], .leftside .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .leftside input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.read-button {
+  background-color: var(--navy); 
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
