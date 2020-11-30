@@ -1,16 +1,44 @@
-@import 'homepage.css';
-@import 'post.css';
+@import "homepage.css";
+@import "post.css";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 :root {
---navy: #0D1321;
---white: #F4FFFD;
---pink: #CF8E80;
---brown: #916953;
+  --navy: #0d1321;
+  --white: #f4fffd;
+  --pink: #cf8e80;
+  --brown: #916953;
 }
 
 body {
-    background-color: var(--pink);
-    color: var(--navy); 
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+  background-color: var(--pink);
+  color: var(--navy);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  grid-area: hd;
+  padding: 10px;
+  font-size: 40px;
+  text-align: center;
+  background: var(--navy);
+  color: var(--white);
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: "Pacifico";
+  font-weight: normal;
+  font-size: 90pt;
+}
+
+.footer {
+  grid-area: ft;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--brown);
+  color: var(--white);
+  text-align: center;
 }
