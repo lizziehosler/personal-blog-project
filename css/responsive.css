@@ -1,0 +1,73 @@
+/* Homepage media queries */
+
+@media(min-width: 700px) {
+    .container {
+      display: grid;
+     
+      grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd sd main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+  
+    .rightside {
+      flex-direction: row;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .leftside .search-container {
+      float: none;
+    }
+    .leftside a,
+    .leftside input[type="text"],
+    .leftside .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .leftside input[type="text"] {
+      border: 1px solid #ccc;
+    }
+    
+  }
+
+/* Blog post media queries */
+
+@media only screen and (min-width: 640px) {
+    .gallery-image {
+      flex-basis: 50%;
+    }
+    .post-container {
+      display: grid;
+    
+      grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main main main sd"
+        "ft ft ft ft ft ft ft ft";
+    }
+    .side-info {
+      flex-direction: column;
+    }
+  }
+  
+  @media only screen and (min-width: 960px) {
+    .gallery-image {
+      flex-basis: 33.333%;
+    }
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    .gallery-image {
+      flex-basis: 25%;
+    }
+  }
+  
+  @media only screen and (min-width: 1600px) {
+    .gallery-image {
+      flex-basis: 20%;
+    }
+  }
