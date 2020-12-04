@@ -92,37 +92,6 @@
   display: block;
 }
 
-@media only screen and (min-width: 640px) {
-  .gallery-image {
-    flex-basis: 50%;
-  }
-  .post-container {
-    display: grid;
-  
-    grid-template-areas:
-      "hd hd hd hd hd hd hd hd"
-      "main main main main main main main sd"
-      "ft ft ft ft ft ft ft ft";
-  }
-  .side-info {
-    flex-direction: column;
-  }
-}
-
-@media only screen and (min-width: 960px) {
-  .gallery-image {
-    flex-basis: 33.333%;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .gallery-image {
-    flex-basis: 25%;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .gallery-image {
-    flex-basis: 20%;
-  }
+#blog-subheader {
+  text-decoration: underline;
 }

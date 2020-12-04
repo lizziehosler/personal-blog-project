@@ -92,38 +92,5 @@
   font-size: 16px;
 }
 
-@media(min-width: 700px) {
-  .container {
-    display: grid;
-   
-    grid-template-areas:
-      "hd hd hd hd hd hd hd hd"
-      "sd sd main main main main main main"
-      "ft ft ft ft ft ft ft ft";
-  }
 
-  .rightside {
-    flex-direction: row;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .leftside .search-container {
-    float: none;
-  }
-  .leftside a,
-  .leftside input[type="text"],
-  .leftside .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .leftside input[type="text"] {
-    border: 1px solid #ccc;
-  }
-  
-}
 
